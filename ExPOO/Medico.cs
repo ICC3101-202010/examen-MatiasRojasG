@@ -20,11 +20,7 @@ namespace ExPOO
 
 
         //Metodos para evaluar y curar a un jugador
-        public void Evaluar()
-        {
-
-        }
-        public void Curar()
+        public void EvaluaryCurar()
         {
 
         }

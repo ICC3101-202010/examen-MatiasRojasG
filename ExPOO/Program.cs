@@ -6,6 +6,10 @@ namespace ExPOO
     {
         public static void Main(string[] args)
         {
+            //static void Entrenadorr_CambioRealizado()
+            //{
+            //    Console.WriteLine("Cambio Realizado");
+            //}
             BDD bdd = new BDD();
             Console.WriteLine("Ajustes del partido:");
             Console.WriteLine("Nacional / Internacional");

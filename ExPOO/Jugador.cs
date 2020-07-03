@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ExPOO
 {
-    public class Jugador
+    public class Jugador : ILesion
     {
         private string name;
         private int edad;
@@ -24,7 +24,18 @@ namespace ExPOO
             this.name = Name;
             this.equipo = Team;
         }
-
+        public void Lesion()
+        {
+            Console.WriteLine(Nombre + " está lesionado");
+            Console.WriteLine("No puede seguir jugando");
+            var evento = CambioRealizado;
+            if(evento!=null)
+            {
+                evento();
+            }
+        }
+        public delegate void Cambio();
+        public event Cambio CambioRealizado;
         public int Edad { get => edad; set => edad = value; }
         public int Sueldo { get => sueldo; set => sueldo = value; }
         public string Nombre { get => name; set => name = value; }
@@ -34,5 +45,11 @@ namespace ExPOO
         public string Posicion { get => posicion; set => posicion = value; }
         public string Nacionalidad { get => nacionalidad; set => nacionalidad = value; }
         public string Equipo { get => equipo; set => equipo = value; }
+
+        
+
+
+
+
     }
 }

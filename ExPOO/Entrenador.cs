@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ExPOO
 {
-    public class Entrenador //: IChangePlayer
+    public class Entrenador : IChangePlayer
     {
         private string name;
         private int edad;
@@ -22,9 +22,15 @@ namespace ExPOO
         public void CambiaJugador(Jugador sale, Jugador entra)
         {
             Console.WriteLine(Nombre + " decide sacar a " + sale.Nombre + " por " + entra.Nombre);
+            var evento = CambioRealizado;
+            if (evento != null)
+            {
+                evento();
+            }
         }
 
-
+        public delegate void Cambio();
+        public event Cambio CambioRealizado;
 
 
 

@@ -72,14 +72,14 @@ namespace ExPOO
             medicoSa.Add(medicSant);
 
             Medico medicCh = new Medico("Alvarez", 52, 1900000, "Chilena", "Chile");
-            medicoCh.Add(medicB);
+            medicoCh.Add(medicCh);
             Medico medicColo = new Medico("Silva", 57, 1800000, "Chilena", "Colo Colo");
             medicoCol.Add(medicColo);
 
             Medico medicArg = new Medico("Mendoza", 45, 2000000, "Argentina", "Argentina");
-            medicoArg.Add(medicB);
+            medicoArg.Add(medicArg);
             Medico medicBarc = new Medico("Gutierrez", 61, 2500000, "Española", "Barcelona");
-            medicoBar.Add(medicSant);
+            medicoBar.Add(medicBarc);
 
             //Jugadores Brasil
             Jugador jugadorb1 = new Jugador("A", 30, 38000000, 20, 90, "1", "Portero", "Brasileña", "Brasil");
@@ -280,16 +280,6 @@ namespace ExPOO
             jugadoresSa.Add(jugadorSa14);
             Jugador jugadorSa15 = new Jugador("O", 32, 50000000, 79, 65, "24", "CentroCampista", "Chilena", "Barcelona");
             jugadoresSa.Add(jugadorSa15);
-
-
-
-
-
-
-
-
-
-
 
 
 

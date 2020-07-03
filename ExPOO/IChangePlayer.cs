@@ -3,6 +3,6 @@ namespace ExPOO
 {
     public interface IChangePlayer
     {
-        void CambiaJugador();
+        void CambiaJugador(Jugador sale, Jugador entra);
     }
 }
