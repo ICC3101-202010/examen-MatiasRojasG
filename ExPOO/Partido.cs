@@ -6,7 +6,6 @@ namespace ExPOO
     {
         Random rnd = new Random();
         private int minutos;
-        BDD bdd = new BDD();
         private string liganacional;
         private Equipo team1;
         private Equipo team2;
@@ -25,18 +24,23 @@ namespace ExPOO
 
         public string Start()
         {
-            Console.WriteLine("Comienza el partido señoras y señores");
-            Console.WriteLine("");
             Thread.Sleep(1000);
             Console.WriteLine("Hoy será " + Team1 + " vs " + Team2);
             Console.WriteLine(Duracion + " minutos de mojar la camiseta");
 
-            Console.WriteLine("Para " + Team1+ "la formacion será");
+            Console.WriteLine("Para " + Team1+ "la formación será");
             team1.JugadoresLlamados();
             Thread.Sleep(1000);
-            Console.WriteLine("Para " + Team2 + "la formacion será");
-            team2.JugadoresLlamados();
+            Console.WriteLine("DT "+team1.Entrenador);
+            Thread.Sleep(1000);
+            Console.WriteLine("Medico " + team1.Medico);
 
+            Console.WriteLine("Para " + Team2 + "la formación será");
+            team2.JugadoresLlamados();
+            Thread.Sleep(1000);
+            Console.WriteLine("DT " + team2.Entrenador);
+            Thread.Sleep(1000);
+            Console.WriteLine("Medico " + team1.Medico);
 
             if (liganacional == "Nacional")
             {
@@ -134,7 +138,6 @@ namespace ExPOO
             {
                 Console.WriteLine("Se lamenta " + team1.Entrenador + ", una jugada perdida");
             }
-
             Thread.Sleep(1000);
             int cuartajugada = rnd.Next(0, 2);
             int equipocuartajugada = rnd.Next(0, 2);

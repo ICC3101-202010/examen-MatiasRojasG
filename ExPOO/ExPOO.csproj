@@ -40,6 +40,7 @@
     <Compile Include="IChangePlayer.cs" />
     <Compile Include="IEnC.cs" />
     <Compile Include="BDD.cs" />
+    <Compile Include="ILesion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\paises.txt" />
